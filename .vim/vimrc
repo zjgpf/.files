@@ -1,4 +1,4 @@
-source ~/vim_config/vimcolor
+source ~/.vim/vimcolor
 set relativenumber
 set hls
 set tabstop=4
