@@ -1,4 +1,3 @@
-source ~/.vim/vimcolor
 set relativenumber
 set hls
 set tabstop=4
@@ -6,3 +5,4 @@ set shiftwidth=4
 set expandtab
 set nu
 set clipboard=unnamed
+set t_Co=256
