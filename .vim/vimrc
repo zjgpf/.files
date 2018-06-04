@@ -6,3 +6,5 @@ set expandtab
 set nu
 set clipboard=unnamed
 set t_Co=256
+colorscheme molokai
+set shiftround
