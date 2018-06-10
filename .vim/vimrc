@@ -5,6 +5,29 @@ set shiftwidth=4
 set expandtab
 set nu
 set clipboard=unnamed
+set shiftround
+set autoindent
 set t_Co=256
 colorscheme molokai
-set shiftround
+
+nnoremap <Space> <Nop>
+let mapleader="\<Space>"
+nnoremap <leader>- ddp
+nnoremap <leader>_ ddkP
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>" viw<Esc>a"<Esc>bi"<Esc>lel
+nnoremap <leader>' viw<Esc>a'<Esc>bi'<Esc>lel
+vnoremap <leader>" <Esc>`<i"<Esc>`>a"<Esc>l
+vnoremap <leader>' <Esc>`<i'<Esc>`>a'<Esc>l
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+inoremap jk <Esc>
+
+iabbrev adn and
