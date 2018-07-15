@@ -4,14 +4,14 @@ set incsearch
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set nu
+set number
 set clipboard=unnamed
 set shiftround
 set autoindent
 set t_Co=256
+set foldmethod=indent
+set foldlevelstart=99
 colorscheme molokai
-
-
 
 set laststatus=2
 set statusline=
@@ -35,18 +35,10 @@ nnoremap <leader>" viw<Esc>a"<Esc>bi"<Esc>lel
 nnoremap <leader>' viw<Esc>a'<Esc>bi'<Esc>lel
 vnoremap <leader>" <Esc>`<i"<Esc>`>a"<Esc>l
 vnoremap <leader>' <Esc>`<i'<Esc>`>a'<Esc>l
-nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
 inoremap jk <Esc>
 
 iabbrev adn and
 
 autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
 autocmd FileType javascript nnoremap <buffer> <leader>c I//<Esc>
-"nnoremap <leader>c I#<Esc>
+autocmd FileType java nnoremap <buffer> <leader>c I//<Esc>
