@@ -7,11 +7,12 @@ set expandtab
 set number
 set clipboard=unnamed
 set shiftround
-set autoindent
 set t_Co=256
 set foldmethod=indent
 set foldlevelstart=99
+
 colorscheme molokai
+
 
 set laststatus=2
 set statusline=
@@ -42,3 +43,5 @@ iabbrev adn and
 autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
 autocmd FileType javascript nnoremap <buffer> <leader>c I//<Esc>
 autocmd FileType java nnoremap <buffer> <leader>c I//<Esc>
+autocmd FileType html nnoremap <buffer> <leader>c I<!--<Esc>A--><Esc>
+autocmd FileType html nnoremap <buffer> <leader>C ^d4l<Esc>$d3h
