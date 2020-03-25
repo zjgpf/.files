@@ -11,6 +11,7 @@ set t_Co=256
 set foldmethod=indent
 set foldlevelstart=99
 
+syntax on
 colorscheme molokai
 
 
