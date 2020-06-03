@@ -8,8 +8,8 @@ set number
 set clipboard=unnamed
 set shiftround
 set t_Co=256
-set foldmethod=indent
-set foldlevelstart=99
+"set foldmethod=indent
+"set foldlevelstart=99
 
 syntax on
 colorscheme molokai
@@ -40,9 +40,23 @@ vnoremap <leader>' <Esc>`<i'<Esc>`>a'<Esc>l
 inoremap jk <Esc>
 
 iabbrev adn and
+iabbrev fontArial Arial, Helvetica, sans-serif;
+iabbrev fontVerdana Verdana, Geneva, sans-serif;
+iabbrev fontRoboto 'Roboto', sans-serif;
+iabbrev fontSegoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+iabbrev colorLight #f4f4f4;
+iabbrev colorDark #333;
+
+
 
 autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
 autocmd FileType javascript nnoremap <buffer> <leader>c I//<Esc>
 autocmd FileType java nnoremap <buffer> <leader>c I//<Esc>
 autocmd FileType html nnoremap <buffer> <leader>c I<!--<Esc>A--><Esc>
 autocmd FileType html nnoremap <buffer> <leader>C ^d4l<Esc>$d3h
+autocmd FileType html set tabstop=2
+autocmd FileType html set shiftwidth=2
+autocmd FileType css set tabstop=2
+autocmd FileType css set shiftwidth=2
+autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
+autocmd BufNewFile *.css 0r ~/.vim/templates/css.skel
