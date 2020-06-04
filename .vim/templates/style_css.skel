@@ -1,0 +1,152 @@
+/* define variables */
+:root {
+  --color-dark: #333;
+  --color-dark-hover: #444;
+  --color-light: #f4f4f4;
+  --color-primary: #f7c08a;
+  --color-input-border: #ddd;
+  --color-btn: #fff;
+  --color-btn-background: #333;
+  --color-btn-hover: #333;
+  --color-btn-hover-background: #f7c08a;
+  --color-text-primary: #f7c08a;
+  --line-height-default: 1.7em;
+  --max-width-default: 1100px;
+}
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html, body {
+  font-family: Arial, Helvetica, sans-serif;   
+  line-height: var(--line-height-default);
+}
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  background: var(--color-dark-hover);
+  color: white;
+  padding: 20px;
+}
+
+/* Utility Class */
+.container {
+  margin: auto;
+  max-width: var(--max-width-default); 
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.clr {
+  clear: both;
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px; 
+  color: var(--color-btn);
+  background-color: var(--color-btn-background);
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-btn-hover-background);
+  color: var(--color-btn-hover);
+}
+
+.btn-light {
+  background-color: var(--color-light);
+  color: var(--color-dark); 
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.box-col-3 {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center; 
+}
+
+.box-col-3 i {
+  margin-bottom: 10px;
+}
+
+/* padding */
+.p-y-10 { padding: 10px 0; }
+.p-y-20 { padding: 20px 0; }
+.p-y-30 { padding: 30px 0; }
+
+.h-40 { 
+  font-size: 40px; 
+  line-height: 1.2em;
+}
+.h-60 { 
+  font-size: 60px; 
+  line-height: 1.2em;
+}
+
+.ta-c { text-align: center; }
+
+.form-default .form-group {
+  margin-bottom: 20px;
+}
+
+.form-default label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-default input,
+.form-default textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px var(--color-input-border) solid;
+}
+
+.form-default textarea {
+  height: 200px;
+}
+
+.form-default input:focus,
+.form-default textarea:focus {
+  outline: none;
+  border-color: var(--color-text-primary);
+}

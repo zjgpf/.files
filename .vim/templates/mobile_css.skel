@@ -1,0 +1,14 @@
+/* define variables */
+:root {
+  --color-dark: #333;
+  --color-dark-hover: #444;
+  --color-light: #f4f4f4;
+  --color-primary: #f7c08a;
+  --color-input-border: #ddd;
+  --color-btn: #fff;
+  --color-btn-background: #333;
+  --color-btn-hover: #333;
+  --color-btn-hover-background: #f7c08a;
+  --color-text-primary: #f7c08a;
+  --line-height-default: 1.7em;
+}
