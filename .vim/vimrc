@@ -52,8 +52,11 @@ iabbrev colorDark #333;
 autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
 autocmd FileType javascript nnoremap <buffer> <leader>c I//<Esc>
 autocmd FileType java nnoremap <buffer> <leader>c I//<Esc>
-autocmd FileType html nnoremap <buffer> <leader>c I<!--<Esc>A--><Esc>
-autocmd FileType html nnoremap <buffer> <leader>C ^d4l<Esc>$d3h
+"g_:last non-space charactor
+autocmd FileType html nnoremap <buffer> <leader>c I<!--<Esc>g_a--><Esc>
+autocmd FileType html nnoremap <buffer> <leader>C ^d4l<Esc>g_2hD
+autocmd FileType css nnoremap <buffer> <leader>c I/*<Esc>g_a*/<Esc>
+autocmd FileType css nnoremap <buffer> <leader>C ^d2l<Esc>g_hD
 autocmd FileType html set tabstop=2
 autocmd FileType html set shiftwidth=2
 autocmd FileType css set tabstop=2
