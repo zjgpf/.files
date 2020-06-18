@@ -61,6 +61,8 @@ autocmd FileType html set tabstop=2
 autocmd FileType html set shiftwidth=2
 autocmd FileType css set tabstop=2
 autocmd FileType css set shiftwidth=2
+autocmd FileType scss set tabstop=2
+autocmd FileType scss set shiftwidth=2
 autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
-autocmd BufNewFile style.css 0r ~/.vim/templates/style_css.skel
-autocmd BufNewFile mobile.css 0r ~/.vim/templates/mobile_css.skel
+autocmd BufNewFile templateA.css 0r ~/.vim/templates/templateA_css.skel
+autocmd BufNewFile templateA_mobile.css 0r ~/.vim/templates/templateA_mobile_css.skel
