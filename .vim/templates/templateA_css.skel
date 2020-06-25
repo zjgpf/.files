@@ -14,7 +14,10 @@ font-family: 'Open Sans', sans-serif;
   --color-light: #f4f4f4;
   --color-primary-orange: #f7c08a;
   --color-primary-green: #28a745; 
+  --color-primary-blue: #3292a6;
   --color-secondary-blue: #0284d0;
+
+  --overlay-primary-blue: rgba(50, 146, 166, 0.8);
 
   --color-primary: var(--color-primary-green); 
   --color-secondary: var(--color-secondary-blue);
