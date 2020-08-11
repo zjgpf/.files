@@ -1,8 +1,8 @@
 set relativenumber
 set hlsearch
 set incsearch
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set number
 set clipboard=unnamed
@@ -64,5 +64,6 @@ autocmd FileType css set shiftwidth=2
 autocmd FileType scss set tabstop=2
 autocmd FileType scss set shiftwidth=2
 autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
+autocmd BufNewFile templateA.html 0r ~/.vim/templates/templateA_html.skel
 autocmd BufNewFile templateA.css 0r ~/.vim/templates/templateA_css.skel
 autocmd BufNewFile templateA_mobile.css 0r ~/.vim/templates/templateA_mobile_css.skel
