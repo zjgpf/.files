@@ -46,8 +46,8 @@ iabbrev fontRoboto 'Roboto', sans-serif;
 iabbrev fontSegoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 iabbrev colorLight #f4f4f4;
 iabbrev colorDark #333;
-
-
+iabbrev fontAwesome <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+iabbrev tailWind <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.6.2/tailwind.min.css" rel="stylesheet" />
 
 autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
 autocmd FileType javascript nnoremap <buffer> <leader>c I//<Esc>
