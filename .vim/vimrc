@@ -1,19 +1,20 @@
+set number
 set relativenumber
 set hlsearch
 set incsearch
 set tabstop=2
 set shiftwidth=2
-set expandtab
-set number
+"set expandtab
 set clipboard=unnamed
 set shiftround
-set t_Co=256
+"set t_Co=256
 "set foldmethod=indent
 "set foldlevelstart=99
 
 syntax on
-colorscheme molokai
+filetype plugin on
 
+colorscheme molokai
 
 set laststatus=2
 set statusline=
@@ -27,43 +28,44 @@ set statusline +=%2*/%L%*               "total lines
 set statusline +=%1*%4v\ %*             "virtual column number
 set statusline +=%2*0x%04B\ %*          "character under cursor
 
-nnoremap <Space> <Nop>
-let mapleader="\<Space>"
-nnoremap <leader>- ddp
-nnoremap <leader>_ ddkP
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <leader>" viw<Esc>a"<Esc>bi"<Esc>lel
-nnoremap <leader>' viw<Esc>a'<Esc>bi'<Esc>lel
-vnoremap <leader>" <Esc>`<i"<Esc>`>a"<Esc>l
-vnoremap <leader>' <Esc>`<i'<Esc>`>a'<Esc>l
+"nnoremap <Space> <Nop>
+"let mapleader="\<Space>"
+"nnoremap <leader>- ddp
+"nnoremap <leader>_ ddkP
+"nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+"nnoremap <leader>sv :source $MYVIMRC<cr>
+"nnoremap <leader>" viw<Esc>a"<Esc>bi"<Esc>lel
+"nnoremap <leader>' viw<Esc>a'<Esc>bi'<Esc>lel
+"vnoremap <leader>" <Esc>`<i"<Esc>`>a"<Esc>l
+"vnoremap <leader>' <Esc>`<i'<Esc>`>a'<Esc>l
+
 inoremap jk <Esc>
 
-iabbrev adn and
-iabbrev fontArial Arial, Helvetica, sans-serif;
-iabbrev fontVerdana Verdana, Geneva, sans-serif;
-iabbrev fontRoboto 'Roboto', sans-serif;
-iabbrev fontSegoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-iabbrev colorLight #f4f4f4;
-iabbrev colorDark #333;
+"iabbrev adn and
+"iabbrev fontArial Arial, Helvetica, sans-serif;
+"iabbrev fontVerdana Verdana, Geneva, sans-serif;
+"iabbrev fontRoboto 'Roboto', sans-serif;
+"iabbrev fontSegoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+"iabbrev colorLight #f4f4f4;
+"iabbrev colorDark #333;
 iabbrev fontAwesome <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 iabbrev tailWind <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.6.2/tailwind.min.css" rel="stylesheet" />
 
-autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
-autocmd FileType javascript nnoremap <buffer> <leader>c I//<Esc>
-autocmd FileType java nnoremap <buffer> <leader>c I//<Esc>
-"g_:last non-space charactor
-autocmd FileType html nnoremap <buffer> <leader>c I<!--<Esc>g_a--><Esc>
-autocmd FileType html nnoremap <buffer> <leader>C ^d4l<Esc>g_2hD
-autocmd FileType css nnoremap <buffer> <leader>c I/*<Esc>g_a*/<Esc>
-autocmd FileType css nnoremap <buffer> <leader>C ^d2l<Esc>g_hD
-autocmd FileType html set tabstop=2
-autocmd FileType html set shiftwidth=2
-autocmd FileType css set tabstop=2
-autocmd FileType css set shiftwidth=2
-autocmd FileType scss set tabstop=2
-autocmd FileType scss set shiftwidth=2
+"autocmd FileType python nnoremap <buffer> <leader>c I#<Esc>
+"autocmd FileType javascript nnoremap <buffer> <leader>c I//<Esc>
+"autocmd FileType java nnoremap <buffer> <leader>c I//<Esc>
+""g_:last non-space charactor
+"autocmd FileType html nnoremap <buffer> <leader>c I<!--<Esc>g_a--><Esc>
+"autocmd FileType html nnoremap <buffer> <leader>C ^d4l<Esc>g_2hD
+"autocmd FileType css nnoremap <buffer> <leader>c I/*<Esc>g_a*/<Esc>
+"autocmd FileType css nnoremap <buffer> <leader>C ^d2l<Esc>g_hD
+"autocmd FileType html set tabstop=2
+"autocmd FileType html set shiftwidth=2
+"autocmd FileType css set tabstop=2
+"autocmd FileType css set shiftwidth=2
+"autocmd FileType scss set tabstop=2
+"autocmd FileType scss set shiftwidth=2
 autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
-autocmd BufNewFile templateA.html 0r ~/.vim/templates/templateA_html.skel
-autocmd BufNewFile templateA.css 0r ~/.vim/templates/templateA_css.skel
-autocmd BufNewFile templateA_mobile.css 0r ~/.vim/templates/templateA_mobile_css.skel
+"autocmd BufNewFile templateA.html 0r ~/.vim/templates/templateA_html.skel
+"autocmd BufNewFile templateA.css 0r ~/.vim/templates/templateA_css.skel
+"autocmd BufNewFile templateA_mobile.css 0r ~/.vim/templates/templateA_mobile_css.skel
